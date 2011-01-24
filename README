@@ -1,0 +1,21 @@
+xls_calendar.pl - create a group calendar as M$ Excel file
+
+Usage: ./xls_calendar.pl -o <outfile.xls> [-y <year>] [-l <de> | <en> ] name1 name2 nameN
+
+Example:	./xls_calendar.pl -o 2011.xls Foobar Alice Bob
+		Generates a xls file such as you can see in xls_calendar.pl_output.png
+
+
+
+xls_calendar_single.pl - create a normal calendar as M$ Excel file
+
+Usage: ./xls_calendar_single.pl -o <outfile.xls> [-y <year>] [-l <de> | <en> ]
+
+Example:	./xls_calendar_single.pl -o 2011_single.xls -l en
+		Generates a xls file such as you can see in xls_calendar_single_output.png
+
+
+Both scripts are using the following modules from CPAN, which you have to install to use this code:
+
+	Spreadsheet::WriteExcel;
+	Date::Calc
